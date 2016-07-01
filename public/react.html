@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src = "//cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.min.js"></script>
+    <title>Hello React</title>
+    <!--<script src="js/react.js"></script>-->
+    <script src="js/JSXT.js"></script>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/jsx">
+    var HelloWorld = React.createClass({
+        render: function () {
+            return (
+                    <div>
+                        <h1>Hello World Tag</h1>
+                        <p>This is some text</p>
+                    </div>
+            );
+        }
+    });
+    React.render(<HelloWorld />, document.body);
+    console.log("I was called indeed");
+</script>
+</body>
+</html>
